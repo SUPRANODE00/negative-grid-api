@@ -26,7 +26,7 @@ def trigger_hopping_agent(state_token):
     print("[*] Deploying split-intelligence hopping agent package...")
 
     payload = {
-        "agent_id": "PRISM-TRACER-01",
+        "agent_id": "SUPRANODE00-TRACE",
         "token": state_token,
         "status": "hopping_active",
         "hop_timestamp": time.time(),
