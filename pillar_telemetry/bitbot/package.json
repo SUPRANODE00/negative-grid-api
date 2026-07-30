@@ -1,0 +1,19 @@
+{
+  "name": "bitbot",
+  "version": "1.0.0",
+  "main": "bitbot_service.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "cors": "^2.8.6",
+    "express": "^5.2.1",
+    "three": "^0.185.1",
+    "three-stdlib": "^2.36.1",
+    "vite": "^8.1.5"
+  }
+}
