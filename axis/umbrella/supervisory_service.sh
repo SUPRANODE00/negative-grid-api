@@ -4,18 +4,23 @@ AUDIT_LOG=~/axis/imprint/witness.log
 MQTT_TOPIC="mesh/uav/supervisory/beacon"
 CAPSULE_ID="CAPSULE-OMEGA"
 FILTER=~/axis/umbrella/sl1th3r_rainbow.sh
+
 echo "[SUPERVISORY CONTROL TOWER] Encapsulating with SL1TH3R 𖤐 RAINBOW INFERNAL BURNMARK..." | $FILTER
+
 while :; do
   TS=$(date -u +"%Y-%m-%dT%H:%M:%SZ")
   LAT=$(awk '{print $1}' $RAW_INPUT 2>/dev/null)
   LON=$(awk '{print $2}' $RAW_INPUT 2>/dev/null)
   LAT=${LAT:-30.388412}
   LON=${LON:-96.088295}
+
   GATE_STATUS="PERMITTED"
   if [ -f ~/axis/armature/lockout.flag ]; then
     GATE_STATUS="GATED_HALT"
   fi
+
   BURNMARK=$(echo -n "${TS}:${CAPSULE_ID}:${LAT}:${LON}:${GATE_STATUS}:SL1TH3R_RAINBOW" | sha256sum | awk '{print $1}')
+
   JSON_PAYLOAD=$(cat <<JSON
 {
   "timestamp": "$TS",
@@ -28,14 +33,20 @@ while :; do
 }
 JSON
   )
+
   if [ "$GATE_STATUS" = "PERMITTED" ]; then
     echo "[AUDIT] $TS | CAPSULE=$CAPSULE_ID | BURNMARK=$BURNMARK | STATE=$GATE_STATUS" >> $AUDIT_LOG
+    
     if command -v mosquitto_pub >/dev/null 2>&1; then
       echo "$JSON_PAYLOAD" | mosquitto_pub -t "$MQTT_TOPIC" -l
     fi
-    echo "EMITTED BEACON: $TS | BURNMARK: ${BURNMARK:0:16}... | GATE: $GATE_STATUS" | $FILTER
+
+    # POSIX compliant string slicing using cut -c 1-16
+    SHORT_BURNMARK=$(echo "$BURNMARK" | cut -c 1-16)
+    echo "EMITTED BEACON: $TS | BURNMARK: ${SHORT_BURNMARK}... | GATE: $GATE_STATUS" | $FILTER
   else
     echo "GATED EXECUTION NOTICE: $TS" | $FILTER
   fi
+
   sleep 5
 done
