@@ -1,4 +1,4 @@
-#!/data/data/com.termux/files/usr/bin/sh
+#!/usr/bin/env sh
 
 FILTER=~/axis/umbrella/sl1th3r_rainbow.sh
 

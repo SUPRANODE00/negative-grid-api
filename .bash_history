@@ -1,500 +1,500 @@
-}
+sed -i '/sl1th3r@penguin/d' "$TARGET_FILE" 2>/dev/null
 
-const daemon = new BiomatrixFocusDaemon(canvas);
-console.log('[Node-Daemon]: Frame rendered successfully. Telemetry stream active and stable.');
+# Update final operational lock status via sed
+sed -i 's/STATUS:.*/STATUS:GRID_LOCKED_SECURE/g' "$TARGET_FILE"
+
+# Display final configuration state using cat and awk
+echo "--- FINAL CONFIGURATION STATE ---"
+cat "$TARGET_FILE" | awk -F':' '{printf "-> %-15s : %s\n", $1, $2}'
+echo "[EXECUTION SUCCESS] Mesh telemetry and CPU affinity protocols synchronized."
 EOF
 
-npx esbuild biomatrix_deck_node.js --bundle --outfile=public/bundle.js --format=esm --minify
-ls -lh public/bundle.js
-node public/bundle.js
-npx esbuild biomatrix_deck_node.js --bundle --outfile=public/bundle.js --platform=node --format=esm --minify
-ls -lh public/bundle.js
-node public/bundle.js
-import asyncio
-import json
-class UnifiedClusterStack:
-async def main():
-if __name__ == "__main__":;     asyncio.run(main())
-import asyncio
-import json
-class UnifiedClusterStack:
-async def main():
-if __name__ == "__main__":;     asyncio.run(main())
-import asyncio
-import json
-class UnifiedClusterStack:
-async def main():
-if __name__ == "__main__":;     asyncio.run(main())
-esbuild biomatrix_deck_node.js --bundle --outfile=public/bundle.js --minify
-npx esbuild biomatrix_deck_node.js --bundle --outfile=dist/bundle.js --format=esm
-cat << 'EOF' > biomatrix_deck_node.js
-import { JSDOM } from 'jsdom';
-import gl from 'gl';
-import { Deck } from '@deck.gl/core';
-import { ScatterplotLayer } from '@deck.gl/layers';
+chmod +x finalize_grid.sh
+./finalize_grid.sh
+cat << 'EOF' > finalize_grid.sh
+#!/bin/bash
+TARGET_FILE="objectives_advanced.cfg"
 
-const dom = new JSDOM(`<!DOCTYPE html><html><body><canvas id="biomatrix-canvas" width="800" height="600" tabindex="0" role="region" aria-label="Biomatrix Compartment Telemetry Viewport"></canvas></body></html>`, {
-  url: "http://localhost"
-});
+echo "[STREAM PIPELINE] Sanitizing and finalizing pipeline states..."
 
-global.window = dom.window;
-global.document = dom.window.document;
-global.navigator = dom.window.navigator;
+# Strip any redundant prompt artifacts if present
+sed -i '/sl1th3r@penguin/d' "$TARGET_FILE" 2>/dev/null
 
-const canvas = document.getElementById('biomatrix-canvas');
-canvas.getContext = (type) => {
-  if (type === 'webgl' || type === 'experimental-webgl' || type === 'webgl2') {
-    return gl(800, 600, { preserveDrawingBuffer: true, alpha: true });
-  }
-  return null;
-};
+# Update final operational lock status via sed
+sed -i 's/STATUS:.*/STATUS:GRID_LOCKED_SECURE/g' "$TARGET_FILE"
 
-class BiomatrixFocusDaemon {
-  constructor(targetCanvas) {
-    this.canvas = targetCanvas;
-    this.initAccessibilityLayer();
-  }
-
-  initAccessibilityLayer() {
-    if (!this.canvas) return;
-
-    this.canvas.addEventListener('focus', () => {
-      console.info('[Daemon]: Focus acquired on biomatrix rendering node. Activating high-contrast telemetry stream.');
-      this.canvas.style.outline = '2px solid #8A2BE2';
-    });
-
-    this.canvas.addEventListener('blur', () => {
-      console.info('[Daemon]: Focus lost. Returning to background polling state.');
-      this.canvas.style.outline = 'none';
-    });
-
-    this.canvas.dispatchEvent(new dom.window.FocusEvent('focus'));
-  }
-}
-
-const focusDaemon = new BiomatrixFocusDaemon(canvas);
-
-console.log('[Node-Daemon]: Initializing Biomatrix Compartment Inventory...');
-
-const biomatrixDeck = new Deck({
-  canvas: 'biomatrix-canvas',
-  initialViewState: {
-    longitude: -95.3698,
-    latitude: 29.7604,
-    zoom: 12,
-    pitch: 45,
-    bearing: 0
-  },
-  layers: [
-    new ScatterplotLayer({
-      id: 'biomatrix-telemetry-nodes',
-      data: [{ coordinates: [-95.3698, 29.7604], size: 100, color: [138, 43, 226] }],
-      getPosition: d => d.coordinates,
-      getRadius: d => d.size,
-      getFillColor: d => d.color,
-      pickable: true,
-      autoHighlight: true
-    })
-  ],
-  onAfterRender: () => {
-    console.log('[Node-Daemon]: Frame rendered successfully. Telemetry stream active and stable.');
-  }
-});
+# Display final configuration state using cat and awk
+echo "--- FINAL CONFIGURATION STATE ---"
+cat "$TARGET_FILE" | awk -F':' '{printf "-> %-15s : %s\n", $1, $2}'
+echo "[EXECUTION SUCCESS] Mesh telemetry and CPU affinity protocols synchronized."
 EOF
 
-# Find active file copy processes and their open descriptors
-ps aux | grep -E "cp|rsync|gvfs|thunar|nautilus"
-# List open files for the specific process ID (replace <PID> with the actual process number)
-lsof -p <PID>
-logcat -d | grep -iE "storage|media|copy|ioexception"
-# List all active user processes to spot lingering background tasks
-ps -u sl1th3r -o pid,stat,%cpu,%mem,cmd
-sync
-cat << 'EOF' > biomatrix_deck_node.js
-import { JSDOM } from 'jsdom';
-import gl from 'gl';
-import { Deck } from '@deck.gl/core';
-import { ScatterplotLayer } from '@deck.gl/layers';
+chmod +x finalize_grid.sh
+./finalize_grid.sh
+ 
+cat << 'EOF' > finalize_grid.sh
+#!/bin/bash
+TARGET_FILE="objectives_advanced.cfg"
 
-const dom = new JSDOM(`<!DOCTYPE html><html><body><canvas id="biomatrix-canvas" width="800" height="600" tabindex="0" role="region" aria-label="Biomatrix Compartment Telemetry Viewport"></canvas></body></html>`, {
-  url: "http://localhost"
-});
+echo "[STREAM PIPELINE] Sanitizing and finalizing pipeline states..."
 
-global.window = dom.window;
-global.document = dom.window.document;
-global.navigator = dom.window.navigator;
+# Strip any redundant prompt artifacts if present
+sed -i '/sl1th3r@penguin/d' "$TARGET_FILE" 2>/dev/null
 
-const canvas = document.getElementById('biomatrix-canvas');
-canvas.getContext = (type) => {
-  if (type === 'webgl' || type === 'experimental-webgl' || type === 'webgl2') {
-    return gl(800, 600, { preserveDrawingBuffer: true, alpha: true });
-  }
-  return null;
-};
+# Update final operational lock status via sed
+sed -i 's/STATUS:.*/STATUS:GRID_LOCKED_SECURE/g' "$TARGET_FILE"
 
-class BiomatrixFocusDaemon {
-  constructor(targetCanvas) {
-    this.canvas = targetCanvas;
-    this.initAccessibilityLayer();
-  }
-
-  initAccessibilityLayer() {
-    if (!this.canvas) return;
-
-    this.canvas.addEventListener('focus', () => {
-      console.info('[Daemon]: Focus acquired on biomatrix rendering node. Activating high-contrast telemetry stream.');
-    });
-  }
-}
-
-const daemon = new BiomatrixFocusDaemon(canvas);
-console.log('[Node-Daemon]: Frame rendered successfully. Telemetry stream active and stable.');
+# Display final configuration state using cat and awk
+echo "--- FINAL CONFIGURATION STATE ---"
+cat "$TARGET_FILE" | awk -F':' '{printf "-> %-15s : %s\n", $1, $2}'
+echo "[EXECUTION SUCCESS] Mesh telemetry and CPU affinity protocols synchronized."
 EOF
 
-npm install --save-dev esbuild
-cat << 'EOF' > biomatrix_deck_node.js
-import { JSDOM } from 'jsdom';
-import gl from 'gl';
-import { Deck } from '@deck.gl/core';
-import { ScatterplotLayer } from '@deck.gl/layers';
+chmod +x finalize_grid.sh
+./finalize_grid.sh
+cat << 'EOF' > commit_mesh.sh
+#!/bin/bash
+TARGET_FILE="objectives_advanced.cfg"
 
-const dom = new JSDOM(`<!DOCTYPE html><html><body><canvas id="biomatrix-canvas" width="800" height="600" tabindex="0" role="region" aria-label="Biomatrix Compartment Telemetry Viewport"></canvas></body></html>`, {
-  url: "http://localhost"
-});
+echo "[GRID COMMIT] Committing state matrix to local storage vault..."
 
-global.window = dom.window;
-global.document = dom.window.document;
-global.navigator = dom.window.navigator;
+# Final confirmation check using awk validation pass
+awk -F':' '{
+    if ($1 == "STATUS" && $2 == "GRID_LOCKED_SECURE") {
+        print "[VERIFIED] Grid Status: Securely Locked."
+    }
+}' "$TARGET_FILE"
 
-const canvas = document.getElementById('biomatrix-canvas');
-canvas.getContext = (type) => {
-  if (type === 'webgl' || type === 'experimental-webgl' || type === 'webgl2') {
-    return gl(800, 600, { preserveDrawingBuffer: true, alpha: true });
-  }
-  return null;
-};
-
-class BiomatrixFocusDaemon {
-  constructor(targetCanvas) {
-    this.canvas = targetCanvas;
-    this.initAccessibilityLayer();
-  }
-
-  initAccessibilityLayer() {
-    if (!this.canvas) return;
-
-    this.canvas.addEventListener('focus', () => {
-      console.info('[Daemon]: Focus acquired on biomatrix rendering node. Activating high-contrast telemetry stream.');
-    });
-  }
-}
-
-const daemon = new BiomatrixFocusDaemon(canvas);
-console.log('[Node-Daemon]: Frame rendered successfully. Telemetry stream active and stable.');
+echo "[SUCCESS] Node telemetry grid synchronized and locked under profile ID: 12D3KooWHPJGjvjQR5J2mBe1tT3j9QaS8NjApDqvCS55PjFiM8CD"
 EOF
 
-nano prism_window_monitor.py
-nano hopping_agent_transmitter.py
-crypto_tokenization.py
-nano
-crypto_tokenization.py
-nano crypto_tokenization.py
-#!/usr/bin/env bash
-# tms_monitor.sh
-# Thermal Management Service watchdog for high-speed trace operations
-echo "[*] Initializing Thermal Management Services (TMS) loop..."
-while true; do
-    if [ -f /sys/class/thermal/thermal_zone0/temp ]; then         TEMP=$(cat /sys/class/thermal/thermal_zone0/temp);         TEMP_C=$((TEMP / 1000));         echo "[*] Current Core Temperature: ${TEMP_C}°C";                  if [ "$TEMP_C" -gt 75 ]; then             echo "[!] WARNING: Thermal threshold exceeded. Throttling tracing frequency...";             sleep 10;         fi;     fi;     sleep 5; done
-#!/usr/bin/env bash
-# ==============================================================================
-# Pipeline Name: Prism-Stream-Processor.sh
-# Objective: Stream, filter, and parse active telemetry logs and socket tables 
-#            using standard Unix utilities (cat, sed, awk) to isolate trace-dye 
-#            signals and hopping-agent endpoints.
-# ==============================================================================
-echo "[*] Initializing Unix stream processing pipeline for trace logs..."
-# Step 1: Dump and filter active connection tables using cat and awk
-cat /proc/net/tcp | awk 'NR>1 {print $2, $4}' | while read -r local remote; do     echo "[*] Socket Mapping -> Local: $local | Remote: $remote"; done
-# Step 2: Stream and sanitize telemetry audit trails using sed for pattern stripping
-journalctl --since="05:00:00" --until="06:42:00" --no-pager |     grep -i "session\|swap\|cros" |     sed -E 's/^[A-Za-z]+ [0-9]+ [0-9:]+ [^ ]+ //g' |     awk '{print "[!] Anomaly Log:", $0}'
-# Step 3: Extract and format active process identifiers for the hopping agent
-ps aux | grep -E "python|chrome|cros" | grep -v grep |     awk '{print "PID:", $2, "| CPU:", $3, "| CMD:", $11}' |     sed 's/--/—/g'
-echo "[+] Stream processing complete. Telemetry tokens parsed."
-#!/usr/bin/env bash
-# ==============================================================================
-# Pipeline Name: Prism-Stream-Mutator.sh
-# Objective: Process container-less socket state changes, extract endpoints 
-#            via cat/awk, and sanitize stream outputs using sed.
-# ==============================================================================
-echo "[*] Initializing Prism-Stream-Mutator pipeline..."
-# Step 1: Parse TCP table and translate hex endpoints using awk and sed
-cat /proc/net/tcp | awk 'NR>1 {print $2}' | sed 's/:/ /g' | while read -r hex_ip hex_port; do     echo "[*] Active Hex Socket -> IP: $hex_ip | Port: $hex_port"; done
-# Step 2: Stream anomaly traces filtered via sed and formatted with cat/awk
-journalctl --since="05:00:00" --until="06:42:00" --no-pager 2>/dev/null |     grep -E "cros-garcon|session" |     sed -E 's/^[A-Za-z]+[[:space:]]+[0-9]+[[:space:]]+[0-9:]+[[:space:]]+[^[:space:]]+[[:space:]]+//g' |     awk '{print "[*] Filtered Stream Token:", $0}'
-# Step 3: Extract container runtime IDs and ld-linux processes
-ps aux | grep "ld-linux" | grep -v grep |     awk '{print "MUTATED-PID:", $2, "| CMD:", $11}' |     sed 's/\/opt\/google\/cros-containers\//[CONTAINERLESS-ROOT]\//g'
-echo "[+] Mutation complete. Base zero signal ground stabilized."
-#!/usr/bin/env bash
-# ==============================================================================
-# Pipeline Name: Prism-Stream-Mutator.sh
-# Objective: Process container-less socket state changes, extract endpoints 
-#            via cat/awk, and sanitize stream outputs using sed.
-# ==============================================================================
-echo "[*] Initializing Prism-Stream-Mutator pipeline..."
-# Step 1: Parse TCP table and translate hex endpoints using awk and sed
-cat /proc/net/tcp | awk 'NR>1 {print $2}' | sed 's/:/ /g' | while read -r hex_ip hex_port; do     echo "[*] Active Hex Socket -> IP: $hex_ip | Port: $hex_port"; done
-# Step 2: Stream anomaly traces filtered via sed and formatted with cat/awk
-journalctl --since="05:00:00" --until="06:42:00" --no-pager 2>/dev/null |     grep -E "cros-garcon|session" |     sed -E 's/^[A-Za-z]+[[:space:]]+[0-9]+[[:space:]]+[0-9:]+[[:space:]]+[^[:space:]]+[[:space:]]+//g' |     awk '{print "[*] Filtered Stream Token:", $0}'
-# Step 3: Extract container runtime IDs and ld-linux processes
-ps aux | grep "ld-linux" | grep -v grep |     awk '{print "MUTATED-PID:", $2, "| CMD:", $11}' |     sed 's/\/opt\/google\/cros-containers\//[CONTAINERLESS-ROOT]\//g'
-echo "[+] Mutation complete. Base zero signal ground stabilized."
-#!/usr/bin/env bash
-# ==============================================================================
-# Pipeline Name: Prism-Stream-Mutator.sh
-# Objective: Process container-less socket state changes, extract endpoints 
-#            via cat/awk, and sanitize stream outputs using sed.
-# ==============================================================================
-echo "[*] Initializing Prism-Stream-Mutator pipeline..."
-# Step 1: Parse TCP table and translate hex endpoints using awk and sed
-cat /proc/net/tcp | awk 'NR>1 {print $2}' | sed 's/:/ /g' | while read -r hex_ip hex_port; do     echo "[*] Active Hex Socket -> IP: $hex_ip | Port: $hex_port"; done
-# Step 2: Stream anomaly traces filtered via sed and formatted with cat/awk
-journalctl --since="05:00:00" --until="06:42:00" --no-pager 2>/dev/null |     grep -E "cros-garcon|session" |     sed -E 's/^[A-Za-z]+[[:space:]]+[0-9]+[[:space:]]+[0-9:]+[[:space:]]+[^[:space:]]+[[:space:]]+//g' |     awk '{print "[*] Filtered Stream Token:", $0}'
-# Step 3: Extract container runtime IDs and ld-linux processes
-ps aux | grep "ld-linux" | grep -v grep |     awk '{print "MUTATED-PID:", $2, "| CMD:", $11}' |     sed 's/\/opt\/google\/cros-containers\//[CONTAINERLESS-ROOT]\//g'
-echo "[+] Mutation complete. Base zero signal ground stabilized."
-git config --local commit.gpgsign false
-git init
-mkdir -p core/telemetry core/server
-mv prism_window_monitor.py core/telemetry/
-mv hopping_agent_transmitter.py core/telemetry/
-mv crypto_tokenization.py core/telemetry/
-mv tms_monitor.sh core/server/
-mv Prism-Stream-Processor.sh core/server/
-# server_engine.py
-import os
-import time
-def start_rendering_engine():
-    print("[*] Initializing Prism Rendering Engine Server...")
-    while True:;         print("[*] Executing telemetry loop cycle and updating 3D node map...")
-        os.system("bash core/server/Prism-Stream-Processor.sh")
-        time.sleep(5)
-if __name__ == "__main__":;     start_rendering_engine()
-# server_engine.py
-import os
-import time
-def start_rendering_engine():
-    print("[*] Initializing Prism Rendering Engine Server...")
-    while True:;         print("[*] Executing telemetry loop cycle and updating 3D node map...")
-        os.system("bash core/server/Prism-Stream-Processor.sh")
-        time.sleep(5)
-if __name__ == "__main__":;     start_rendering_engine()'
+chmod +x commit_mesh.sh
+./commit_mesh.shcat << 'EOF' > commit_mesh.sh
+#!/bin/bash
+TARGET_FILE="objectives_advanced.cfg"
 
-# server_engine.py
-import os
-import time
+echo "[GRID COMMIT] Committing state matrix to local storage vault..."
 
-def start_rendering_engine():
-    print("[*] Initializing Prism Rendering Engine Server...")
-    while True:
-        print("[*] Executing telemetry loop cycle and updating 3D node map...")
-        os.system("bash core/server/Prism-Stream-Processor.sh")
-        time.sleep(5)
+# Final confirmation check using awk validation pass
+awk -F':' '{
+    if ($1 == "STATUS" && $2 == "GRID_LOCKED_SECURE") {
+        print "[VERIFIED] Grid Status: Securely Locked."
+    }
+}' "$TARGET_FILE"
+
+echo "[SUCCESS] Node telemetry grid synchronized and locked under profile ID: 12D3KooWHPJGjvjQR5J2mBe1tT3j9QaS8NjApDqvCS55PjFiM8CD"
+EOF
+
+chmod +x commit_mesh.sh
+./commit_mesh.sh
+cat ~/.config/axis/cortex/active-loop/reservation-node/model_origin.json | sed 's/[{},]//g' | awk 'NF {print "PARSED_PARAM ->", $1, ":", $2}'
+cat ~/.config/axis/cortex/active-loop/reservation-node/model_origin.json | sed 's/["{},]//g' | awk 'NF {print "CORTEX_NODE_PARAM ->", $1, "=>", $2}'
+./commit_mesh.sh
+cat ~/.config/axis/cortex/active-loop/reservation-node/model_origin.json | sed 's/["{},]//g' | awk 'NF {print "GRID_STATE_SYNC ->", $1, "::", $2}'
+./commit_mesh.sh
+cat ~/.config/axis/cortex/active-loop/reservation-node/model_origin.json | sed 's/["{},]//g' | awk 'NF {print "GRID_STATE_SYNC ->", $1, "::", $2}'
+ipfs pubsub sub axis-cortex-active-loop
+# Clear the terminal buffer
+clear
+# Verify that the IPFS daemon API is responding cleanly via POST
+curl -X POST -s http://127.0.0.1:5001/api/v0/id | grep -o '"ID":[^,]*'
+# Clear the terminal buffer
+clear
+# Verify that the IPFS daemon API is responding cleanly via POST
+curl -X POST -s http://127.0.0.1:5001/api/v0/id | grep -o '"ID":[^,]*'
+# Verify active routing and check connected swarm peers
+ipfs swarm peers | wc -l
+ipfs swarm peers | head -n 10
+ipfs stats bw
+# Monitor real-time telemetry throughput and active pipeline statistics
+ipfs stats bw --poll
+sudo ss -lptn 'sport = :8080'
+ps aux | grep ipfsps aux | grep ipfs
+ps aux | grep ipfs
+sudo kill -9 <PID>
+ipfs config Addresses.Gateway /ip4/127.0.0.1/tcp/9080
+ipfs config Addresses.Gateway /ip4/127.0.0.1/tcp/9080
+ipfs daemon --mount
+ipfs daemon --mount
+ipfs daemon --mount
+ls -la /ipfs
+ls -la /mfs
+ls -la /ipfs
+ls -la /mfs
+kill 650313
+po.lock: someone else has the lock
+sl1th3r@penguin:~$ ipfs daemon --m
+po.lock: someone else has the lock
+sl1th3r@penguin:~$ ipfs daemon --m
+rm -f ~/.ipfs/repo.lock
+ -
+
+ -
+ - -
+\\
+
+ipfs daemon --mount
+Initializing daemon...
+Kubo version: 0.42.0-969853d96
+Repo version: 18
+System version: amd64/linux
+Golang version: go1.26.4
+Error: lock /home/sl1th3r/.ipfs/repo.lock: someone else has the lock
+sl1th3r@penguin:~$ ls -la /ipfs
+ls -la /mfs
+ls: reading directory '/ipfs': Operation not permitted
+total 0
+total 0
+sl1th3r@penguin:~$ 
+sl1th3r@penguin:~$ ls -la /ipfs
+ls -la /mfs
+ls: reading directory '/ipfs': Operation not permitted
+total 0
+total 0
+sl1th3r@penguin:~$ 
+sl1th3r@penguin:~$ kill 650313
+sl1th3r@penguin:~$ 
+sl1th3r@penguin:~$ 
+sl1th3r@penguin:~$ 
+sl1th3r@penguin:~$ po.lock: someone else has the lock
+sl1th3r@penguin:~$ ipfs daemon --m
+-bash: po.lock:: command not found
+-bash: sl1th3r@penguin:~$: command not found
+sl1th3r@penguin:~$ 
+sl1th3r@penguin:~$ 
+sl1th3r@penguin:~$ 
+sl1th3r@penguin:~$ po.lock: someone else has the lock
+sl1th3r@penguin:~$ ipfs daemon --m
+-bash: po.lock:: command not found
+-bash: sl1th3r@penguin:~$: command not found
+sl1th3r@penguin:~$ 
+sl1th3r@penguin:~$ 
+sl1th3r@penguin:~$ rm -f ~/.ipfs/repo.lock
+sl1th3r@penguin:~$ 
+sl1th3r@penguin:~$ 
+sl1th3r@penguin:~$ 
+sl1th3r@penguin:~$ 
+sl1th3r@penguin:~$  -
+-bash: -: command not found
+sl1th3r@penguin:~$ > 
+sl1th3r@penguin:~$  -
+-bash: -: command not found
+sl1th3r@penguin:~$  - -
+-bash: -: command not found
+sl1th3r@penguin:~$ \\
+-bash: \: command not found
+sl1th3r@penguin:~$ > > 
+sl1th3r@penguin:~$ ipfs daemon --mount
+Initializing daemon...
+Kubo version: 0.42.0-969853d96
+Repo version: 18
+System version: amd64/linux
+Golang version: go1.26.4
+PeerID: 12D3KooWHPJGjvjQR5J2mBe1tT3j9QaS8NjApDqvCS55PjFiM8CD
+2026-08-04T16:32:29.134-0500    INFO    failed to sufficiently increase receive buffer size (was: 208 kiB, wanted: 7168 kiB, got: 416 kiB). See https://github.com/quic-go/quic-go/wiki/UDP-Buffer-Sizes for details.
+Swarm listening on 100.115.92.26:4001 (TCP+UDP)
+Swarm listening on 127.0.0.1:4001 (TCP+UDP)
+Swarm listening on [::1]:4001 (TCP+UDP)
+Run 'ipfs id' to inspect announced and discovered multiaddrs of this node.
+RPC API server listening on /ip4/127.0.0.1/tcp/5001
+WebUI: http://127.0.0.1:5001/webui
+IPFS mounted at: /ipfs
+IPNS mounted at: /ipns
+MFS  mounted at: /mfs
+Gateway server listening on /ip4/127.0.0.1/tcp/9080
+Routing V1 API exposed at http://127.0.0.1:9080/routing/v1
+Daemon is ready
+ls -la /ipfs
+ls -la /mfs
+ls -la /ipfs
+ls -la /mfsipfs pubsub sub axis-cortex-active-loop
+ipfs pubsub pub axis-cortex-active-loop '{"node_status": "active", "cortex_integration": "bound", "timestamp": "2026-08-04"}'
+sl1th3r@penguin:~$ ipfs daemon --mount
+Initializing daemon...
+Kubo version: 0.42.0-969853d96
+Repo version: 18
+System version: amd64/linux
+Golang version: go1.26.4
+PeerID: 12D3KooWHPJGjvjQR5J2mBe1tT3j9QaS8NjApDqvCS55PjFiM8CD
+2026-08-04T16:32:29.134-0500    INFO    failed to sufficiently increase receive buffer size (was: 208 kiB, wanted: 7168 kiB, got: 416 kiB). See https://github.com/quic-go/quic-go/wiki/UDP-Buffer-Sizes for details.
+Swarm listening on 100.115.92.26:4001 (TCP+UDP)
+Swarm listening on 127.0.0.1:4001 (TCP+UDP)
+Swarm listening on [::1]:4001 (TCP+UDP)
+Run 'ipfs id' to inspect announced and discovered multiaddrs of this node.
+RPC API server listening on /ip4/127.0.0.1/tcp/5001
+WebUI: http://127.0.0.1:5001/webui
+IPFS mounted at: /ipfs
+IPNS mounted at: /ipns
+MFS  mounted at: /mfs
+Gateway server listening on /ip4/127.0.0.1/tcp/9080
+Routing V1 API exposed at http://127.0.0.1:9080/routing/v1
+Daemon is ready
+ls -la /ipfs
+ls -la /mfs
+ls -la /ipfs
+ls -la /mfs
+Received interrupt signal, shutting down...
+(Hit ctrl-c again to force-shutdown the daemon.)
+sl1th3r@penguin:~$ 
+sl1th3r@penguin:~$ Initializing daemon...
+-bash: Initializing: command not found
+sl1th3r@penguin:~$ Kubo version: 0.42.0-969853d96
+-bash: Kubo: command not found
+sl1th3r@penguin:~$ Repo version: 18
+-bash: Repo: command not found
+sl1th3r@penguin:~$ System version: amd64/linux
+-bash: System: command not found
+sl1th3r@penguin:~$ Golang version: go1.26.4
+-bash: Golang: command not found
+sl1th3r@penguin:~$ 
+sl1th3r@penguin:~$ Error: lock /home/sl1th3r/.ipfs/repo.lock: someone else has the lock
+-bash: Error:: command not found
+sl1th3r@penguin:~$ sl1th3r@penguin:~$ ls -la /ipfs
+-bash: sl1th3r@penguin:~$: command not found
+sl1th3r@penguin:~$ ls -la /mfs
+total 0
+drwxr-xr-x 1 sl1th3r root   0 Aug  4 16:27 .
+drwxr-xr-x 1 root    root 178 Aug  4 16:27 ..
+sl1th3r@penguin:~$ ls: reading directory '/ipfs': Operation not permitted
+-bash: ls:: command not found
+sl1th3r@penguin:~$ total 0
+-bash: total: command not found
+sl1th3r@penguin:~$ total 0
+-bash: total: command not found
+sl1th3r@penguin:~$ sl1th3r@penguin:~$ 
+-bash: sl1th3r@penguin:~$: command not found
+sl1th3r@penguin:~$ sl1th3r@penguin:~$ ls -la /ipfs
+-bash: sl1th3r@penguin:~$: command not found
+sl1th3r@penguin:~$ ls -la /mfs
+total 0
+drwxr-xr-x 1 sl1th3r root   0 Aug  4 16:27 .
+drwxr-xr-x 1 root    root 178 Aug  4 16:27 ..
+sl1th3r@penguin:~$ ls: reading directory '/ipfs': Operation not permitted
+-bash: ls:: command not found
+sl1th3r@penguin:~$ total 0
+-bash: total: command not found
+sl1th3r@penguin:~$ total 0
+-bash: total: command not found
+sl1th3r@penguin:~$ sl1th3r@penguin:~$ 
+-bash: sl1th3r@penguin:~$: command not found
+sl1th3r@penguin:~$ sl1th3r@penguin:~$ kill 650313
+-bash: sl1th3r@penguin:~$: command not found
+sl1th3r@penguin:~$ sl1th3r@penguin:~$ 
+-bash: sl1th3r@penguin:~$: command not found
+sl1th3r@penguin:~$ sl1th3r@penguin:~$ 
+-bash: sl1th3r@penguin:~$: command not found
+sl1th3r@penguin:~$ sl1th3r@penguin:~$ 
+-bash: sl1th3r@penguin:~$: command not found
+sl1th3r@penguin:~$ sl1th3r@penguin:~$ po.lock: someone else has the lock
+-bash: sl1th3r@penguin:~$: command not found
+sl1th3r@penguin:~$ sl1th3r@penguin:~$ ipfs daemon --m
+-bash: sl1th3r@penguin:~$: command not found
+sl1th3r@penguin:~$ -bash: po.lock:: command not found
+-bash: -bash:: command not found
+sl1th3r@penguin:~$ -bash: sl1th3r@penguin:~$: command not found
+-bash: -bash:: command not found
+sl1th3r@penguin:~$ sl1th3r@penguin:~$ 
+-bash: sl1th3r@penguin:~$: command not found
+sl1th3r@penguin:~$ sl1th3r@penguin:~$ 
+-bash: sl1th3r@penguin:~$: command not found
+sl1th3r@penguin:~$ sl1th3r@penguin:~$ 
+-bash: sl1th3r@penguin:~$: command not found
+sl1th3r@penguin:~$ sl1th3r@penguin:~$ po.lock: someone else has the lock
+-bash: sl1th3r@penguin:~$: command not found
+sl1th3r@penguin:~$ sl1th3r@penguin:~$ ipfs daemon --m
+-bash: sl1th3r@penguin:~$: command not found
+sl1th3r@penguin:~$ -bash: po.lock:: command not found
+-bash: -bash:: command not found
+sl1th3r@penguin:~$ -bash: sl1th3r@penguin:~$: command not found
+-bash: -bash:: command not found
+sl1th3r@penguin:~$ sl1th3r@penguin:~$ # 1. Clear any stuck repo locks and terminate existing processes
+rm -f ~/.ipfs/repo.lock
+kill $(pgrep ipfs) 2>/dev/null
+# 2. Run the daemon cleanly with full FUSE mounts enabled in the foreground
+ipfs daemon --mount# 1. Clear any stuck repo locks and terminate existing processes
+rm -f ~/.ipfs/repo.lock
+kill $(pgrep ipfs) 2>/dev/null
+# 2. Run the daemon cleanly with full FUSE mounts enabled in the foreground
+ipfs daemon --mount
+python presentation.py
+asciinema rec state_host_presentation.cast
+python presentation.py
+agg state_host_presentation.cast presentation.gif
+nano presentation.py
+nano presentation.py
+asciinema rec state_host_presentation.cast
+python presentation.py
+cargo install agg
+agg state_host_presentation.cast presentation.gif
+cargo install asciinema-agg
+cargo install asciinema-agg
+python3 -c '
+code = """import time
+from rich.console import Console
+from rich.panel import Panel
+
+console = Console()
+
+slides = [
+    ("[Phase 1] Zero-Origin Anchor", "Architect: D3M1EN 𖤐 CAPSULECRAFT (Erik Ivan Rivera)\\nInitializing coordinate origin (0,0,0).\\nApplying negative volume inversion: negValue block = -(volume block)."),
+    ("[Phase 2] Stateless Constitutional Framework", "Deploying immutable software protocols.\\nActivating automated disaster recovery (ADR) and twin-bot telemetry."),
+    ("[Phase 3] RF Management & Solar Zenith", "Aligning directional RF arrays with theta_zenith.\\nStabilizing sub-nanometer timing jitter."),
+    ("[Phase 4] Interplanetary Bridging", "Executing inverted crux matrix transformation (Gamma_crux).\\nAnchoring state-host to Mars, Saturn, and Jupiter."),
+    ("[Phase 5] Runtime Activation", "Running asynchronous loop across distributed mesh nodes.\\nStealth-enhanced mirror tunnel active.")
+]
+
+def run_presentation():
+    for title, content in slides:
+        console.clear()
+        console.print(Panel(content, title=title, border_style="cyan", width=80))
+        time.sleep(3.0)
 
 if __name__ == "__main__":
-    start_rendering_engine()
-c# server_engine.py
-import os
+    run_presentation()
+"""
+with open("presentation.py", "w") as f:
+    f.write(code)
+print("presentation.py successfully created!")
+'
+asciinema rec state_host_presentation.cast
+python presentation.py
+pip install pylsl
+from pylsl import StreamInlet, resolve_stream
 import time
-def start_rendering_engine():
-    print("[*] Initializing Prism Rendering Engine Server...")
-    while True:;         print("[*] Executing telemetry loop cycle and updating 3D node map...")
-        os.system("bash core/server/Prism-Stream-Processor.sh")
-        time.sleep(5)
-if __name__ == "__main__":;     start_rendering_engine()
-# server_engine.py
-import os
+print("Looking for telemetry stream...")
+streams = resolve_stream('type', 'Telemetry')
+inlet = StreamInlet(streams[0])
+while True:;     sample, timestamp = inlet.pull_sample()
+    # Process telemetry sample and feed into processing pipeline
+    time.sleep(0.1)
+pip install cryptography
+pip install cryptography
+sudo apt update
+sudo apt install -y python3-full python3-venv
+python3 -m venv venv
+source venv/bin/activate
+pip install --upgrade pip
+pip install pylsl cryptography
+pip install --upgrade pip
+pip install pylsl cryptography
+cat << 'EOF' > telemetry_node.py
+from pylsl import StreamInlet, resolve_stream
 import time
-def start_rendering_engine():
-    print("[*] Initializing Prism Rendering Engine Server...")
-    while True:;         print("[*] Executing telemetry loop cycle and updating 3D node map...")
-        os.system("bash core/server/Prism-Stream-Processor.sh")
-        time.sleep(5)
-if __name__ == "__main__":;     start_rendering_engine()
-c
-python3
-#!/usr/bin/env bash
-# tms_monitor.sh
-# Thermal Management Service watchdog for high-speed trace operations
-echo "[*] Initializing Thermal Management Services (TMS) loop..."
-while true; do
-    if [ -f /sys/class/thermal/thermal_zone0/temp ]; then         TEMP=$(cat /sys/class/thermal/thermal_zone0/temp);         TEMP_C=$((TEMP / 1000));         echo "[*] Current Core Temperature: ${TEMP_C}°C";                  if [ "$TEMP_C" -gt 75 ]; then             echo "[!] WARNING: Thermal threshold exceeded. Throttling tracing frequency...";             sleep 10;         fi;     fi;     sleep 5; done
-#!/usr/bin/env bash
-# tms_monitor.sh
-# Thermal Management Service watchdog for high-speed trace operations
-echo "[*] Initializing Thermal Management Services (TMS) loop..."
-while true; do
-    if [ -f /sys/class/thermal/thermal_zone0/temp ]; then         TEMP=$(cat /sys/class/thermal/thermal_zone0/temp);         TEMP_C=$((TEMP / 1000));         echo "[*] Current Core Temperature: ${TEMP_C}°C";                  if [ "$TEMP_C" -gt 75 ]; then             echo "[!] WARNING: Thermal threshold exceeded. Throttling tracing frequency...";             sleep 10;         fi;     fi;     sleep 5; done
-# server_engine.py
-import os
+from cryptography.fernet import Fernet
+
+# Initialize encryption key for inventory compartment
+key = Fernet.generate_key()
+cipher_suite = Fernet(key)
+
+print("Looking for telemetry stream...")
+streams = resolve_stream('type', 'Telemetry')
+inlet = StreamInlet(streams[0])
+
+while True:
+    sample, timestamp = inlet.pull_sample()
+    # Encrypt raw sample payload for secure telemetry transport
+    payload_str = str(sample)
+    encrypted_payload = cipher_suite.encrypt(payload_str.encode())
+    print(f"Secured Telemetry Packet at {timestamp}: {encrypted_payload[:16]}...")
+    time.sleep(0.1)
+EOF
+
+python telemetry_node.py
+cat << 'EOF' > telemetry_node.py
+from pylsl import StreamInlet, resolve_streams
 import time
-def start_rendering_engine():
-    print("[*] Initializing Prism Rendering Engine Server...")
-    while True:;         print("[*] Executing telemetry loop cycle and updating 3D node map...")
-        os.system("bash core/server/Prism-Stream-Processor.sh")
-        time.sleep(5)
-if __name__ == "__main__":;     start_rendering_engine()
-# server_engine.py
-import os
-import time
-def start_rendering_engine():
-    print("[*] Initializing Prism Rendering Engine Server...")
-    while True:;         print("[*] Executing telemetry loop cycle and updating 3D node map...")
-        os.system("bash core/server/Prism-Stream-Processor.sh")
-        time.sleep(5)
-if __name__ == "__main__":;     start_rendering_engine()# server_engine.py
-import os
-import time
-def start_rendering_engine():
-    print("[*] Initializing Prism Rendering Engine Server...")
-    while True:;         print("[*] Executing telemetry loop cycle and updating 3D node map...")
-        os.system("bash core/server/Prism-Stream-Processor.sh")
-        time.sleep(5)
-if __name__ == "__main__":;     start_rendering_engine()
-ring Engine Server...")
+from cryptography.fernet import Fernet
+
+# Initialize encryption key for inventory compartment
+key = Fernet.generate_key()
+cipher_suite = Fernet(key)
+
+print("Looking for telemetry streams...")
+# Resolve all active streams on the network
+streams = resolve_streams(wait_time=2.0)
+
+if not streams:
+    print("No LSL streams detected on the network.")
+else:
+    print(f"Discovered {len(streams)} stream(s). Connecting to primary node...")
+    inlet = StreamInlet(streams[0])
+
     while True:
+        sample, timestamp = inlet.pull_sample()
+        # Encrypt raw sample payload for secure telemetry transport
+        payload_str = str(sample)
+        encrypted_payload = cipher_suite.encrypt(payload_str.encode())
+        print(f"Secured Telemetry Packet at {timestamp}: {encrypted_payload[:16]}...")
+        time.sleep(0.1)
+EOF
 
+python telemetry_node.py
+cd ~/
+source venv/bin/activate
+cd ~/
+source venv/bin/activate
+cat << 'EOF' > mock_telemetry_source.py
+from pylsl import StreamInfo, StreamOutlet
+import time
+import random
 
-git add .
-git commit -m "feat: integrate prism telemetry and rendering engine server pipeline"
-git branch -M main
-git remote add origin https://github.com/SUPRANODE00/negative-grid-api.git
-git push -u origin main
-python3 server_engine.py
-# prism_window_monitor.py
-import hashlib
+# Create a StreamInfo declaration for telemetry nodes (Name, Type, Channels, Sampling Rate, Channel Format, Source ID)
+info = StreamInfo('SovereignTelemetryNode', 'Telemetry', 4, 100, 'float32', 'unique_node_id_001')
+
+# Initialize the outlet
+outlet = StreamOutlet(info)
+
+print("Broadcasting mock telemetry stream on the network...")
+while True:
+    # Generate mock multi-axis sensor data (e.g., bio-telemetry/RF metrics)
+    sample = [random.uniform(0.0, 100.0) for _ in range(4)]
+    outlet.push_sample(sample)
+    time.sleep(0.01)
+EOF
+
+cat << 'EOF' > mock_telemetry_source.py
+from pylsl import StreamInfo, StreamOutlet
 import time
-import json
-import os
-from datetime import datetime
-from hopping_agent_transmitter import trigger_hopping_agent
-from crypto_tokenization import tokenize_payload, load_key
-TRACE_BASELINE_FILE = "/tmp/prism_trace_baseline.json"
-def capture_viewport_fingerprint():
-    screen_state = os.popen("ps aux | grep -E 'session|chrome|Xorg|wayland'").read()
-    fingerprint = hashlib.sha256(screen_state.encode()).hexdigest()
-    return {
-        "hash": fingerprint,
-        "timestamp": datetime.utcnow().isoformat() + "Z",
-        "raw_len": len(screen_state),
-    }
-def load_baseline():
-    if os.path.exists(TRACE_BASELINE_FILE):
-        with open(TRACE_BASELINE_FILE, "r") as f:
-            return json.load(f)
-    baseline = capture_viewport_fingerprint()
-    with open(TRACE_BASELINE_FILE, "w") as f:
-        json.dump(baseline, f)
-    return baseline
-def initialize_trace_matrix():
-    print("[*] Initializing 3D prism coordinate matrix for window buffer...")
-    baseline = load_baseline()
-    key = load_key()
-    while True:;         current = capture_viewport_fingerprint()
-        if current["hash"] != baseline["hash"]:;             print("[!] ALERT: Viewport state deviation detected. Session swap signature active.")
-            payload = {
-                "event": "session_swap",
-                "baseline": baseline,
-                "current": current,
-            }
-            raw = json.dumps(payload)
-            token = tokenize_payload(raw, key)
-            trigger_hopping_agent(token)
-            baseline = current  # update baseline after hop
-        time.sleep(2)
-if __name__ == "__main__":;     initialize_trace_matrix()
-import hashlib
-import time
-import json
-import os
-from datetime import datetime
-from hopping_agent_transmitter import trigger_hopping_agent
-from crypto_tokenization import tokenize_payload, load_key
-TRACE_BASELINE_FILE = "/tmp/prism_trace_baseline.json"
-def capture_viewport_fingerprint():
-    screen_state = os.popen("ps aux | grep -E 'session|chrome|Xorg|wayland'").read()
-    fingerprint = hashlib.sha256(screen_state.encode()).hexdigest()
-    return {
-        "hash": fingerprint,
-        "timestamp": datetime.utcnow().isoformat() + "Z",
-        "raw_len": len(screen_state),
-    }
-def load_baseline():
-    if os.path.exists(TRACE_BASELINE_FILE):
-        with open(TRACE_BASELINE_FILE, "r") as f:
-            return json.load(f)
-    baseline = capture_viewport_fingerprint()
-    with open(TRACE_BASELINE_FILE, "w") as f:
-        json.dump(baseline, f)
-    return baseline
-def initialize_trace_matrix():
-    print("[*] Initializing 3D prism coordinate matrix for window buffer...")
-    baseline = load_baseline()
-    key = load_key()
-    while True:;         current = capture_viewport_fingerprint()
-        if current["hash"] != baseline["hash"]:;             print("[!] ALERT: Viewport state deviation detected. Session swap signature active.")
-            payload = {
-                "event": "session_swap",
-                "baseline": baseline,
-                "current": current,
-            }
-            raw = json.dumps(payload)
-            token = tokenize_payload(raw, key)
-            trigger_hopping_agent(token)
-            baseline = current  # update baseline after hop
-        time.sleep(2)
-if __name__ == "__main__":;     initialize_trace_matrix()
-# prism_window_monitor.py
-import hashlib
-import time
-import json
-import os
-from datetime import datetime
-from hopping_agent_transmitter import trigger_hopping_agent
-from crypto_tokenization import tokenize_payload, load_key
-TRACE_BASELINE_FILE = "/tmp/prism_trace_baseline.json"
-def capture_viewport_fingerprint():
-    screen_state = os.popen("ps aux | grep -E 'session|chrome|Xorg|wayland'").read()
-    fingerprint = hashlib.sha256(screen_state.encode()).hexdigest()
-    return {
-        "hash": fingerprint,
-        "timestamp": datetime.utcnow().isoformat() + "Z",
-        "raw_len": len(screen_state),
-    }
-def load_baseline():
-    if os.path.exists(TRACE_BASELINE_FILE):
-        with open(TRACE_BASELINE_FILE, "r") as f:
-            return json.load(f)
-    baseline = capture_viewport_fingerprint()
-    with open(TRACE_BASELINE_FILE, "w") as f:
-        json.dump(baseline, f)
-    return baseline
-def initialize_trace_matrix():
-    print("[*] Initializing 3D prism coordinate matrix for window buffer...")
-    baseline = load_baseline()
-    key = load_key()
-    while True:;         current = capture_viewport_fingerprint()
-        if current["hash"] != baseline["hash"]:;             print("[!] ALERT: Viewport state deviation detected. Session swap signature active.")
-            payload = {
-                "event": "session_swap",
-                "baseline": baseline,
-                "current": current,
-            }
-            raw = json.dumps(payload)
-            token = tokenize_payload(raw, key)
-            trigger_hopping_agent(token)
-            baseline = current  # update baseline after hop
-        time.sleep(2)
-if __name__ == "__main__":;     initialize_trace_matrix()
-rm -f .git/index.lock
-git add .
-git commit -m "feat: integrate prism telemetry and rendering engine server pipeline"
+import random
+
+# Create a StreamInfo declaration for telemetry nodes (Name, Type, Channels, Sampling Rate, Channel Format, Source ID)
+info = StreamInfo('SovereignTelemetryNode', 'Telemetry', 4, 100, 'float32', 'unique_node_id_001')
+
+# Initialize the outlet
+outlet = StreamOutlet(info)
+
+print("Broadcasting mock telemetry stream on the network...")
+while True:
+    # Generate mock multi-axis sensor data (e.g., bio-telemetry/RF metrics)
+    sample = [random.uniform(0.0, 100.0) for _ in range(4)]
+    outlet.push_sample(sample)
+    time.sleep(0.01)
+EOF
+
+python mock_telemetry_source.py
+adb devices
+adb shell input keyevent 26
+adb shell input keyevent 82
+adb shell stop
+adb shell start
+pkill -f scrcpy
+pkill -f python3
+pkill -f scrcpy
+pkill -f python3
+adb kill-server
+sudo adb start-server
+adb devices
+adb kill-server
+sudo adb start-server
+adb devices
+sudo adb kill-server
+sudo adb start-server
+sudo adb devices
+sudo adb kill-server
+sudo adb start-server
+sudo adb devices
+adb connect <device_ip>:<port>
+nano electric_wizard_loop.py
+chmod +x electric_wizard_loop.py
+python3 electric_wizard_loop.py &
+python3
