@@ -3,10 +3,9 @@ Description=AXIS Umbrella Suite - Supervisory & Telemetry Daemons
 After=network.target
 
 [Service]
-Type=simple
+Type=oneshot
+RemainAfterExit=yes
 ExecStart=/home/sl1th3r/axis/umbrella/run_all.sh
-Restart=always
-RestartSec=5
 WorkingDirectory=/home/sl1th3r/axis
 
 [Install]
